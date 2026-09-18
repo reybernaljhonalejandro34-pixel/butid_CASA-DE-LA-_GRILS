@@ -1,0 +1,461 @@
+/* ==========================================
+   ESTILOS DE LA PÁGINA DE INICIO (MASCULINE BLUE EDITION)
+   ========================================== */
+
+/* Hero Banner Tecnológico Azul */
+.hero-section {
+    position: relative;
+    height: calc(90vh - 80px);
+    min-height: 550px;
+    background: linear-gradient(135deg, #0B132B 0%, #1C2541 50%, #0F172A 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imagenes/fondo_inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 30%, transparent 10%, rgba(11, 17, 32, 0.85) 80%);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: rgba(14, 165, 233, 0.15);
+    color: var(--color-accent);
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    padding: 8px 18px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    backdrop-filter: blur(8px);
+}
+
+.hero-section h1 {
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.15rem;
+    color: var(--color-text-muted);
+    margin-bottom: 36px;
+    font-weight: 400;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Grilla de Categorías */
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.section-title p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 65px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    margin: 20px auto 0 auto;
+    border-radius: var(--radius-full);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.category-card {
+    position: relative;
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-accent);
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.25);
+}
+
+.category-img-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.category-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.category-card:hover .category-img-container img {
+    transform: scale(1.08);
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 30%, rgba(11, 17, 32, 0.95) 100%);
+    z-index: 1;
+}
+
+.category-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+.category-content h3 {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.category-content p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.category-link {
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.category-link:hover {
+    color: var(--color-accent);
+}
+
+/* Sección Identidad Local */
+.local-identity-section {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    margin: 40px 24px;
+    padding: 80px 48px;
+}
+
+.local-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.local-img img {
+    border-radius: var(--radius-md);
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-lg);
+}
+
+.sub-title {
+    color: var(--color-secondary);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.local-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    font-weight: 800;
+}
+
+.local-text p {
+    color: var(--color-text-muted);
+    margin-bottom: 30px;
+}
+
+.local-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.highlight-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.highlight-icon {
+    font-size: 1.6rem;
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    color: var(--color-accent);
+    width: 52px;
+    height: 52px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.highlight-item h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.highlight-item p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Compra en 3 pasos */
+.steps-section {
+    background-color: var(--color-bg);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.step-card {
+    background-color: var(--color-bg-card);
+    padding: 40px;
+    border-radius: var(--radius-md);
+    position: relative;
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-secondary);
+    box-shadow: var(--shadow-cyan);
+}
+
+.step-num {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--color-primary-soft);
+    line-height: 1;
+    margin-bottom: 20px;
+    transition: var(--transition-normal);
+}
+
+.step-card:hover .step-num {
+    color: var(--color-secondary);
+}
+
+.step-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.step-card p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+/* Testimonios */
+.reviews-section {
+    background-color: var(--color-bg-alt);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.review-card {
+    background-color: var(--color-bg-card);
+    padding: 36px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+
+.review-stars {
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.review-card p {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-info h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.author-info span {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+/* Responsivo de Inicio */
+@media (max-width: 992px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .local-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .local-identity-section {
+        padding: 40px 24px;
+        margin: 20px 12px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 80px 0 60px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-section p {
+        font-size: 0.95rem;
+        margin-bottom: 28px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .category-img-container {
+        height: 220px;
+    }
+
+    .step-card {
+        padding: 28px 20px;
+    }
+}

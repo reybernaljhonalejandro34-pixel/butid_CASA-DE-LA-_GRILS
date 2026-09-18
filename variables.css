@@ -1,0 +1,71 @@
+/* ==========================================
+   SISTEMA DE DISEÑO - MASCULINE BLUE EDITION
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Paleta Azul & Cobalto Masculino Moderno */
+    --primary-h: 217;
+    --primary-s: 91%;
+    --primary-l: 60%;
+    --color-primary: #2563EB; /* Azul Eléctrico / Cobalto */
+    --color-primary-hover: #1D4ED8;
+    --color-primary-soft: rgba(37, 99, 235, 0.15);
+
+    --secondary-h: 199;
+    --secondary-s: 89%;
+    --secondary-l: 48%;
+    --color-secondary: #0EA5E9; /* Cian / Azul Neón Tecnológico */
+    --color-secondary-hover: #0284C7;
+    --color-secondary-soft: rgba(14, 165, 233, 0.15);
+
+    --accent-h: 213;
+    --accent-s: 94%;
+    --accent-l: 68%;
+    --color-accent: #38BDF8; /* Azul Hielo Highlight */
+    --color-accent-soft: rgba(56, 189, 248, 0.15);
+
+    /* Tonos Obscuros Masculinos & Neón Slate */
+    --color-bg: #0B1120;           /* Azul Oscuro Profundo / Noche */
+    --color-bg-alt: #0F172A;       /* Slate Oscuro Secundario */
+    --color-bg-card: #1E293B;      /* Card Azul Acero */
+    --color-text: #F8FAFC;         /* Blanco Hielo */
+    --color-text-muted: #94A3B8;   /* Gris Metálico Claro */
+    --color-border: rgba(56, 189, 248, 0.18);
+    
+    /* Dark Mode (Mantenemos compatibilidad) */
+    --color-dark-bg: #070A13;
+    --color-dark-card: #0F172A;
+    --color-dark-text: #F8FAFC;
+    --color-dark-border: rgba(37, 99, 235, 0.25);
+
+    /* Fuentes */
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+
+    /* Sombras y Glow Neón Azules */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 10px 25px rgba(11, 17, 32, 0.5);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.6);
+    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    --shadow-primary: 0 10px 25px rgba(37, 99, 235, 0.4);
+    --shadow-cyan: 0 10px 25px rgba(14, 165, 233, 0.35);
+
+    /* Bordes y Efectos */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-full: 9999px;
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Ancho Máximo de Contenedor */
+    --container-width: 1200px;
+
+    /* Glassmorphism Azul Oscuro */
+    --glass-bg: rgba(15, 23, 42, 0.85);
+    --glass-border: rgba(56, 189, 248, 0.2);
+    --glass-blur: 16px;
+}

@@ -1,0 +1,347 @@
+/* ==========================================
+   ESTILOS DE LA PÁGINA SOBRE NOSOTROS (MASCULINE BLUE EDITION)
+   ========================================== */
+
+/* Banner Superior */
+.page-banner {
+    position: relative;
+    height: 35vh;
+    min-height: 250px;
+    background: linear-gradient(135deg, #0B132B 0%, #1C2541 60%, #0F172A 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.page-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('../imagenes/nosotros_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(11, 17, 32, 0.65);
+    z-index: 2;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+}
+
+.page-banner h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.page-banner p {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+    font-weight: 400;
+}
+
+/* ==========================================
+   SECCIÓN HISTORIA Y MISIÓN
+   ========================================== */
+.history-section {
+    background-color: var(--color-bg);
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sub-title {
+    color: var(--color-secondary);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.history-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    font-weight: 800;
+}
+
+.history-text p {
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+}
+
+.mission-quote {
+    background-color: var(--color-bg-card);
+    border-left: 4px solid var(--color-secondary);
+    border-top: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    margin-top: 30px;
+}
+
+.mission-quote p {
+    font-family: var(--font-title);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.rounded-img {
+    border-radius: var(--radius-md);
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.1/1;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ==========================================
+   SECCIÓN DE PILARES DE CONFIANZA
+   ========================================== */
+.trust-section {
+    background-color: var(--color-bg-alt);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.trust-card {
+    background-color: var(--color-bg-card);
+    padding: 40px 30px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.trust-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.2);
+    border-color: var(--color-secondary);
+}
+
+.trust-icon {
+    font-size: 3rem;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.trust-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.trust-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   SECCIÓN DE PREGUNTAS FRECUENTES (FAQs)
+   ========================================== */
+.faq-section {
+    background-color: var(--color-bg);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-bg-card);
+    overflow: hidden;
+    transition: var(--transition-normal);
+}
+
+.faq-item.active {
+    border-color: var(--color-secondary);
+    box-shadow: var(--shadow-cyan);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+    text-align: left;
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.faq-icon-toggle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    transition: transform var(--transition-normal);
+}
+
+.faq-answer p {
+    padding: 0 30px 24px 30px;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   SECCIÓN DE CONTACTO
+   ========================================== */
+.contact-section {
+    background-color: var(--color-bg-alt);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact-info h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.contact-info p {
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+}
+
+.method-card {
+    display: flex;
+    gap: 20px;
+    background-color: var(--color-bg-card);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.method-icon {
+    font-size: 2rem;
+    width: 54px;
+    height: 54px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-accent);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+/* Formulario */
+.contact-form-container {
+    background-color: var(--color-bg-card);
+    padding: 48px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text);
+}
+
+.form-group input, .form-group textarea {
+    padding: 14px 20px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    outline: none;
+    transition: all var(--transition-fast);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+/* Fotos del Equipo */
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-secondary);
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.team-card img:hover {
+    transform: scale(1.08) rotate(2deg);
+    border-color: var(--color-accent);
+}
+
+@media (max-width: 992px) {
+    .history-grid, .trust-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
